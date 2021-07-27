@@ -60,13 +60,15 @@
 
 
 .todo__container {
+
     transform: translateY(-7rem);
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     width: auto;
-    // @include desktop {
-    //     width: 80vh;
-    // }
+    @include desktop {
+        width: 80rem;
+    }
+
    ul {
     box-shadow: 0px 10px 8px 9px rgba(0,0,0,0.05);
         list-style: none;
@@ -148,11 +150,11 @@
             gap: 1rem;
             background-color: $veryLightGray;
             padding: 1.6rem;
-            width: 40vh; 
+            width: auto;
 
-            @include desktop {
-                width: 80vh;
-            }
+            // @include desktop {
+            //     width: 80vh;
+            // }
             border-bottom: 2px solid $veryLightGrayishBlue;
             border-bottom-left-radius: 1rem;
                 border-bottom-right-radius: 1rem;
