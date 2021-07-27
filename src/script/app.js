@@ -8,6 +8,7 @@ const header = document.querySelector('header');
 
 document.addEventListener("load", function() {
     var viewport = document.querySelector("meta[name=viewport]");
+    console.log(viewport);
     viewport.setAttribute("content", viewport.content + ", height=" + window.innerHeight);
 })
 
