@@ -1,0 +1,121 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background-color: $veryLightGrayishBlue;
+    &.dark {
+        .attribution {
+            color: white;
+        }
+        header {
+            background-image: url('../images/bg-mobile-dark.jpg');
+            @include desktop {
+                background-image: url('../images/bg-desktop-dark.jpg');
+            }
+        }
+        background-color: $veryDarkBlue;
+        .todo__input {
+            background-color: $veryDarkDesaturedBlue; 
+            input[type='text'] {
+                background-color: $veryDarkDesaturedBlue; 
+                color: white;  
+            }
+        }
+        .todo__container {
+            ul {
+                li {
+                    border-bottom: 2px solid $darkGrayishBlueDarkTheme;
+                    background-color: $veryDarkDesaturedBlue; 
+                    p {
+                        color: white;
+                    }
+                    &:last-of-type {
+                        border-bottom: none;
+                        span {
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .non-sortable {
+                .ul-footer {
+                    background-color: $veryDarkDesaturedBlue; 
+                }
+            }
+        }
+        .controls {
+            background-color: $veryDarkDesaturedBlue; 
+            span {
+                background-color: $veryDarkDesaturedBlue; 
+                color: white;
+            }
+        }
+    }
+
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: $primary_font;
+    font-size: 1.6rem;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    border: none;
+}
+
+.error {
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    background-color: rgb(233, 112, 112);
+    margin: 1rem;
+    opacity: 0;
+    transition: all 1s ease;
+    
+}
+
+.opac {
+    opacity: 1 !important;
+}
+
+.low-error {
+    background-color: rgb(97, 157, 206);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    a { 
+    color: hsl(228, 45%, 44%);
+    }
+}
+
+.line-through {
+        text-decoration:line-through;
+        color: red;
+}
+
+.display-none {
+    display: none!important;
+}
+
+.selectedFooter {
+    color: $brightBlue!important;
+}

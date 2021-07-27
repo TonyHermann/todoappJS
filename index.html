@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo APP</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./build/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./build/css/app.css">
+    <title>Frontend Mentor | Todo app</title>
 </head>
+
 <body>
+    <header>
+        <nav>
+            <h1>todo</h1>
+            <div class="themetoggle-button">
+                <svg class="theme-toggle" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+                    <path fill="#FFF" fill-rule="evenodd"
+                        d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z" />
+                </svg>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="todo__input">
+                <input type="text" aria-label="to do input" placeholder="Create a new todo..." id="input">
+            </div>
+            <div class="todo__container">
+                <ul id="sortable">
+                    
+                </ul>
+                <div id="non-sortable" class="non-sortable">
+                    <div class="ul-footer">
+                        <span class="ul-footer__itemsleft">5 items left</span>
+                        <span class="ul-footer__button">Clear completed</span>
+                    </div>
+                </div>
+                <div class="controls">
+                    <span class="all">All</span>
+                    <span class="active">Active</span>
+                    <span class="completed">Completed</span>
+                </div>
+                <span>Drag and drop to reorder list</span>
+            </div>
+           
+        </div>
+    </main>
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Your Name Here</a>.
+        </div>
+    </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="./build/js/app.min.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,163 @@
+.todo__input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 1rem;
+    background-color: $veryLightGray;
+    transform: translateY(-8rem);
+    @include desktop {
+        width: 80vh;
+    }
+    input[type=text] {
+        border: none;
+        background-color: $veryLightGray;
+        padding: 1rem;
+        padding-right: 3rem;
+        margin-right: 2rem;
+        width: 32vh;
+    }
+
+    
+
+}
+
+
+.radio {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 0.01rem solid $darkGrayishBlue;
+    .radio__radio {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        border: 0.01rem solid $darkGrayishBlue;
+
+        display: block;
+            background: linear-gradient($checkBackground);
+            border-radius: 50%;
+            transform: scale(0);
+            transition: transform 0.15s;        
+    }
+
+}
+
+.active {
+    transform: scale(1)!important;
+}
+
+
+.todo__container {
+    transform: translateY(-7rem);
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+        width: 80vh;
+    }
+   ul {
+    box-shadow: 0px 10px 8px 9px rgba(0,0,0,0.05);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            display: grid;
+            align-items: center;   
+            grid-template-columns: 7.4% 80% 12.6%;
+            gap: 1rem;
+            background-color: $veryLightGray;
+            padding: 1.6rem;
+            width: 40vh; 
+            @include desktop {
+                width: 80vh;
+            }
+            border-bottom: 2px solid $veryLightGrayishBlue;
+            
+            &:first-of-type {
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+            }
+            
+            p {
+                font-size: 1.3rem;
+                font-weight: $normal;
+                color: $veryDarkGrayishBlueLightTheme;
+                padding: 0;
+                margin: 0;
+                overflow-x: scroll;
+                @include desktop {
+                    overflow-x: hidden;
+                }
+            }
+        }
+    }
+    span {
+        margin: 0;
+        padding: 0;
+        color: $veryDarkGrayishBlueLightTheme;
+        text-align: center;
+        margin-top: 5rem;
+        cursor: pointer;
+    }
+}
+
+
+
+.controls {
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color:  $veryLightGray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px 9px rgba(0,0,0,0.05);
+    span {
+        border: none;
+        background-color:  $veryLightGray;
+        margin: 1rem;
+        padding: 0;
+        color: $veryDarkGrayishBlueLightTheme;
+        &.selected {
+            color: $brightBlue;
+        }
+    }
+}
+
+.non-sortable {
+    box-shadow: 0px 10px 8px 9px rgba(0,0,0,0.05);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    .ul-footer {
+        display: grid;
+            align-items: center;   
+            grid-template-columns: 7.4% 80% 12.6%;
+            gap: 1rem;
+            background-color: $veryLightGray;
+            padding: 1.6rem;
+            width: 40vh; 
+
+            @include desktop {
+                width: 80vh;
+            }
+            border-bottom: 2px solid $veryLightGrayishBlue;
+            border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                border-bottom: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                span {
+                    font-size: 1.2rem;
+                    margin: 0;
+                    padding: 0;
+                    &:hover {
+                        color: $brightBlue;
+                    }
+                }
+    }
+}

@@ -1,0 +1,36 @@
+// Fonts
+$primary_font: 'Josefin Sans', sans-serif;
+
+/// Font weight
+$normal: 400;
+$bold: 700;
+
+// Colors
+
+/// Primary
+$brightBlue: hsl(220, 98%, 61%);
+$checkBackground: #57ddff, #c058f3;
+
+
+/// Light theme
+$veryLightGray: hsl(0, 0%, 98%);
+$veryLightGrayishBlue: hsl(236, 33%, 92%);
+$lightGrayishBlueLightTheme: hsl(233, 11%, 84%);
+$darkGrayishBlue: hsl(236, 9%, 61%);
+$veryDarkGrayishBlueLightTheme: hsl(235, 19%, 35%);
+/// Dark theme
+
+$veryDarkBlue: hsl(235, 21%, 11%);
+$veryDarkDesaturedBlue: hsl(235, 24%, 19%);
+$lightGrayishBlueDarkTheme: hsl(234, 39%, 85%);
+$lightGrayishBlueHoverDarkTheme: hsl(236, 33%, 92%);
+$darkGrayishBlueDarkTheme: hsl(234, 11%, 52%);
+$veryDarkGrayishBlueDarkTheme1: hsl(233, 14%, 35%);
+$veryDarkGrayishBlueDarkTheme2: hsl(237, 14%, 26%);
+
+
+
+// Media Queries sizes
+$smartphone: 375px;
+$desktop: 1440px;
+

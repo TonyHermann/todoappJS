@@ -1,7 +1,14 @@
 @import 'base/normalize';
 
-// @import 'base/vars';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+@import 'base/vars';
 
 @import 'base/mixins';
 
-// @import 'base/globals';
+@import 'base/globals';
+
+@import 'layout/header';
+
+@import 'layout/todo';
+

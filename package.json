@@ -1,0 +1,38 @@
+{
+  "name": "todoappjs",
+  "version": "1.0.0",
+  "description": "Todo app, made with love, scss and vanilla js",
+  "main": "./build/js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonyHermann/todoappJS.git"
+  },
+  "keywords": [
+    "Todo"
+  ],
+  "author": "Tony Hermann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TonyHermann/todoappJS/issues"
+  },
+  "homepage": "https://github.com/TonyHermann/todoappJS#readme",
+  "devDependencies": {
+    "cssnano": "^5.0.6",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser-js": "^5.2.2",
+    "sass": "^1.35.2",
+    "terser": "^5.7.1"
+  },
+  "dependencies": {
+    "sortablejs": "^1.14.0"
+  }
+}

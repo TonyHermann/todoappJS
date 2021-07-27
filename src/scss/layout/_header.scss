@@ -1,0 +1,40 @@
+header {
+    background-image: url('../images/bg-mobile-light.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 9rem;
+    @include desktop {
+        background-image: url('../images/bg-desktop-light.jpg');
+        background-position: center center;
+        background-size: cover;
+        padding-left: 20rem;
+        padding-right: 20rem;
+    }
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    @include desktop {
+        justify-content: space-around;
+        h1 {
+            font-size: 5rem;
+        }
+    }
+    h1 {
+        margin: 0;
+        color: $veryLightGray;
+        font-weight: $bold;
+        padding: 1rem;
+        font-size: 3.4rem;
+        text-transform: uppercase;
+    }
+}

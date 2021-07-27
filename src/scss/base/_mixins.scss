@@ -1,12 +1,6 @@
 /** Media Queries **/
-@mixin telefono {
-    @media (max-width: #{$telefono}) {
-        @content;
-    }
-}
-
-@mixin tablet {
-    @media (max-width: #{$tablet}) {
+@mixin smartphone {
+    @media (max-width: #{$smartphone}) {
         @content;
     }
 }
@@ -16,8 +10,8 @@
         @content;
     }
 }
-@mixin grid($columnas, $espaciado ) {
+
+@mixin grid($columnas) {
     display: grid;
-    gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
 }
