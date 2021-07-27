@@ -6,12 +6,6 @@ const clearButton = document.querySelector('.ul-footer__button');
 const controls = document.querySelector('.controls');
 const header = document.querySelector('header');
 
-document.addEventListener("load", function() {
-    var viewport = document.querySelector("meta[name=viewport]");
-    console.log(viewport);
-    viewport.setAttribute("content", viewport.content + ", height=" + window.innerHeight);
-})
-
 // itemList for save every TODO
 const itemList = {
     all: '',
@@ -21,6 +15,9 @@ const itemList = {
 
 document.addEventListener('DOMContentLoaded', function () {
     startApp();
+    var viewport = document.querySelector("meta[name=viewport]");
+    console.log(viewport);
+    viewport.setAttribute("content", viewport.content + ", height=" + window.innerHeight);
 });
 
 const startApp = () => {
