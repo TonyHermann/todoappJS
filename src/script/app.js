@@ -15,6 +15,7 @@ const itemList = {
 
 document.addEventListener('DOMContentLoaded', function () {
     startApp();
+    // .
     var viewport = document.querySelector("meta[name=viewport]");
     console.log(viewport);
     viewport.setAttribute("content", viewport.content + ", height=" + window.innerHeight);
