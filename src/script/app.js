@@ -6,6 +6,11 @@ const clearButton = document.querySelector('.ul-footer__button');
 const controls = document.querySelector('.controls');
 const header = document.querySelector('header');
 
+document.addEventListener("load", function() {
+    var viewport = document.querySelector("meta[name=viewport]");
+    viewport.setAttribute("content", viewport.content + ", height=" + window.innerHeight);
+})
+
 // itemList for save every TODO
 const itemList = {
     all: '',
