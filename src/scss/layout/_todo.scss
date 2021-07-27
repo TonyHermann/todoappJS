@@ -1,3 +1,10 @@
+.container {
+    display: grid;
+    @include desktop {
+        width: 120rem;
+    }
+}
+
 .todo__input {
     display: flex;
     flex-direction: row;
@@ -8,8 +15,9 @@
     border-radius: 1rem;
     background-color: $veryLightGray;
     transform: translateY(-8rem);
+    width: auto;
     @include desktop {
-        width: 80vh;
+        width: auto;
     }
     input[type=text] {
         border: none;
